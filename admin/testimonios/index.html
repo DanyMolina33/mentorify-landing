@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Administrar testimonios | Mentorify</title>
+  <script type="module" src="/src/admin-testimonials.js"></script>
+</head>
+<body class="mfy-admin-page">
+  <main id="adminApp" class="mfy-admin-shell" aria-live="polite">
+    <section id="adminConfig" class="mfy-admin-message" hidden><h1>Configuración pendiente</h1><p>Agrega las variables de Supabase para habilitar el panel.</p></section>
+    <section id="adminLogin" class="mfy-admin-login" hidden>
+      <img src="https://secretosdemillonarios.com/wp-content/uploads/2026/05/Logo-e1770201950605.png" alt="Mentorify">
+      <p>ADMINISTRACIÓN PRIVADA</p><h1>Testimonios Mentorify</h1><span>Inicia sesión con tu cuenta administradora.</span>
+      <form id="adminLoginForm"><label>Correo<input type="email" name="email" required autocomplete="username"></label><label>Contraseña<input type="password" name="password" required autocomplete="current-password"></label><p class="mfy-admin-error" role="alert"></p><button type="submit">Iniciar sesión</button></form>
+    </section>
+    <section id="adminDashboard" hidden>
+      <header class="mfy-admin-header"><div><p>MENTORIFY</p><h1>Administrar testimonios</h1></div><div><a href="/" target="_blank" rel="noopener">Ver landing</a><button id="adminLogout" type="button">Cerrar sesión</button></div></header>
+      <nav class="mfy-admin-nav" aria-label="Administración"><a href="/admin/dashboard/">Dashboard</a><a class="is-active" href="/admin/testimonios/">Testimonios</a></nav>
+      <div class="mfy-admin-toolbar"><div class="mfy-admin-filters" role="group" aria-label="Filtrar testimonios"><button class="is-active" data-filter="TODOS">Todos <span data-count="TODOS">0</span></button><button data-filter="PENDIENTE">Pendientes <span data-count="PENDIENTE">0</span></button><button data-filter="APROBADO">Aprobados <span data-count="APROBADO">0</span></button><button data-filter="OCULTO">Ocultos <span data-count="OCULTO">0</span></button></div><button id="adminNew" class="mfy-admin-primary" type="button">Nuevo testimonio</button></div>
+      <p id="adminStatus" class="mfy-admin-status" role="status"></p>
+      <div id="adminList" class="mfy-admin-list"></div>
+    </section>
+  </main>
+  <div id="adminEditor" class="mfy-admin-editor" hidden><div class="mfy-admin-editor-backdrop" data-editor-close></div><section role="dialog" aria-modal="true" aria-labelledby="adminEditorTitle"><button class="mfy-admin-editor-close" type="button" data-editor-close aria-label="Cerrar">×</button><h2 id="adminEditorTitle">Nuevo testimonio</h2><form id="adminEditorForm"><input type="hidden" name="id"><div class="mfy-admin-grid"><label>Nombre<input name="nombre" required maxlength="120"></label><label>Ciudad<input name="ciudad" maxlength="120"></label><label>País<input name="pais" maxlength="100"></label><label>Fecha<input name="fecha" type="date" required></label><label>Plan actual<input name="plan_actual" required maxlength="80"></label><label>Contenido explorado<input name="contenido_explorado" required maxlength="160"></label><label>Calificación<select name="calificacion" required><option value="5">5 estrellas</option><option value="4">4 estrellas</option><option value="3">3 estrellas</option><option value="2">2 estrellas</option><option value="1">1 estrella</option></select></label><label>Estado<select name="estado" required><option>PENDIENTE</option><option>APROBADO</option><option>OCULTO</option></select></label><label>Orden<input name="orden" type="number" min="0" max="1000000" value="0" required></label><label>Origen<select name="origen" required><option value="admin">Administración</option><option value="landing_modal">Landing</option><option value="enlace_directo">Enlace directo</option></select></label></div><label>Comentario<textarea name="comentario" required minlength="10" maxlength="2000"></textarea></label><div class="mfy-admin-checks"><label><input type="checkbox" name="autorizacion_publicacion"> Autorización para publicar</label><label><input type="checkbox" name="destacado"> Testimonio destacado</label></div><label>Avatar opcional<input name="avatar" type="file" accept="image/jpeg,image/png,image/webp"><small>JPG, PNG o WebP, máximo 2 MB.</small></label><input type="hidden" name="foto_url"><div class="mfy-admin-editor-actions"><button type="button" data-editor-close>Cancelar</button><button class="mfy-admin-primary" type="submit">Guardar testimonio</button></div><p class="mfy-admin-error" role="alert"></p></form></section></div>
+</body>
+</html>

@@ -20,9 +20,11 @@ import './styles/whatsapp-community.css';
 import { initFooter } from './modules/footer.js';
 import './styles/footer.css';
 import { initHeroVideo } from './modules/hero-video.js';
+import { initLandingAnalytics } from './analytics/tracker.js';
+
+initHeroVideo();
 
 document.addEventListener('DOMContentLoaded', () => {
-  initHeroVideo();
   initHeader();
   removeLegacyBlocks();
   initTrialFormPresentation();
@@ -34,5 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initOffer();
   initPeruModal();
   initTracking();
+  initLandingAnalytics();
   initReveal();
 });

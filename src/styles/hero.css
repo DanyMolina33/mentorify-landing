@@ -1,0 +1,110 @@
+.mfy-hero{
+  --mfy-brand:#111318;
+  --mfy-brand-hover:#272a31;
+  --mfy-gold:#d7a33b;
+  position:relative;
+  min-height:900px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  overflow:hidden;
+  padding:0 28px 180px;
+  background:#10131a;
+  color:#fff;
+}
+.mfy-hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:1;
+  filter:saturate(1.52) contrast(1.08) brightness(.9);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 58%,rgba(0,0,0,.7) 76%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0,#000 58%,rgba(0,0,0,.7) 76%,transparent 100%);
+}
+.mfy-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,8,31,.32) 0%,rgba(8,18,62,.2) 45%,rgba(35,41,110,.14) 66%,rgba(255,255,255,.1) 79%,#fff 100%),radial-gradient(circle at 88% 30%,rgba(77,65,255,.42) 0%,rgba(66,63,225,.21) 38%,transparent 66%),radial-gradient(circle at 18% 62%,rgba(22,86,230,.25) 0%,rgba(17,54,171,.13) 40%,transparent 68%)}
+.mfy-hero::after{content:"";position:absolute;right:0;bottom:-1px;left:0;height:320px;background:linear-gradient(to bottom,transparent 0%,rgba(255,255,255,.12) 18%,rgba(255,255,255,.56) 57%,#fff 96%);pointer-events:none}
+.mfy-hero-layout{
+  position:relative;
+  z-index:2;
+  width:min(1180px,100%);
+  margin:0 auto;
+  padding-top:142px;
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(360px,430px);
+  align-items:center;
+  gap:clamp(42px,6vw,84px);
+}
+.mfy-hero-content{max-width:670px;padding:0;text-align:left}
+.mfy-hero-logo{display:block;width:min(176px,42vw);max-height:60px;margin:0 0 34px;object-fit:contain;object-position:left center}
+.mfy-hero h1{max-width:690px;margin:0 0 22px;font-size:clamp(48px,5.5vw,76px);font-weight:800;line-height:1.01;letter-spacing:-.025em;text-shadow:0 2px 3px rgba(0,0,0,.42)}
+.mfy-hero-message{max-width:610px}
+.mfy-hero-subtitle{margin:0;color:rgba(255,255,255,.93);font-size:clamp(18px,2vw,22px);font-weight:500;line-height:1.45;text-shadow:0 1px 2px rgba(0,0,0,.42)}
+.mfy-hero-areas{margin:6px 0 0;text-align:left;color:#e2b956;background:linear-gradient(90deg,#f6e2a3 0%,#d8a83f 48%,#f0d486 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-size:clamp(18px,2vw,22px);font-weight:700;line-height:1.45;letter-spacing:.01em;filter:drop-shadow(0 1px 2px rgba(0,0,0,.45))}
+.mfy-hero-areas span{display:inline;margin:0;font-size:inherit;font-weight:600;letter-spacing:0;text-transform:none}
+.mfy-hero-actions{display:flex;align-items:center;gap:12px;margin-top:27px}
+.mfy-hero-button{min-height:53px;padding:0 29px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.72);border-radius:999px;text-decoration:none;font-size:14px;font-weight:700;transition:transform .25s ease,background-color .25s ease,border-color .25s ease,color .25s ease}
+.mfy-hero-button-solid{background:#fff;color:#111318;box-shadow:0 10px 26px rgba(6,10,20,.14)}
+.mfy-hero-button-outline{background:rgba(255,255,255,.05);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.mfy-hero-button:hover{transform:translateY(-2px);border-color:#fff}
+.mfy-hero-button-solid:hover{background:#f1f3f7}.mfy-hero-button-outline:hover{background:rgba(255,255,255,.14)}
+.mfy-hero-micro{max-width:650px;margin:18px 0 0;padding:0;border:0;border-radius:0;background:transparent;color:rgba(255,255,255,.96);font-size:14px;font-weight:500;line-height:1.55;text-shadow:0 1px 2px rgba(0,0,0,.45);-webkit-backdrop-filter:none;backdrop-filter:none}
+.mfy-hero-micro strong{color:#fff;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.mfy-hero-form{width:100%;display:flex;justify-content:flex-end}
+.mfy-hero-form .mfy-login-card{width:100%;max-width:406px;border:1px solid rgba(255,255,255,.58);border-radius:29px;background:rgba(255,255,255,.67);box-shadow:0 30px 75px rgba(11,18,35,.18),0 2px 10px rgba(11,18,35,.06);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);overflow:hidden;color:#101827}
+.mfy-hero-form .mfy-card-header{padding:31px 28px 21px;background:transparent;text-align:center}
+.mfy-hero-form .mfy-logo-wrap{margin:0 0 10px;display:flex;justify-content:center}
+.mfy-hero-form .mfy-logo{width:53px!important;height:53px!important;object-fit:contain!important}
+.mfy-hero-form .mfy-title-block h2{margin:0 0 8px;font-family:Inter,Arial,sans-serif!important;font-size:28px;font-weight:800;line-height:1;letter-spacing:-.055em;color:#050b17;white-space:nowrap}
+.mfy-hero-form .mfy-title-block p{margin:0;color:#65758f;font-size:12px;font-weight:750;line-height:1.35}
+.mfy-hero-form .mfy-card-body{padding:2px 27px 27px;background:transparent}
+.mfy-hero-form .mfy-form{display:flex;flex-direction:column;gap:15px}
+.mfy-hero-form .mfy-field label{display:block;margin:0 0 11px;padding-left:3px;text-align:left;color:#263247;font-size:10px;font-weight:800;letter-spacing:.24em;text-transform:uppercase}
+.mfy-hero-form .mfy-field input{width:100%;height:54px;padding:0 20px;border:0;border-radius:19px;outline:0;background:#eef5ff;color:#18243a;font-size:15px;font-weight:700;box-shadow:none}
+.mfy-hero-form .mfy-field input::placeholder{color:#92a3bb;opacity:1}
+.mfy-hero-form .mfy-field input:focus{box-shadow:0 0 0 3px rgba(17,19,24,.11)}
+.mfy-hero-form .mfy-email-help{display:block;margin:6px 4px 0;text-align:center;color:#65758f;font-size:10.5px;font-weight:650;line-height:1.35}
+.mfy-hero-form .mfy-main-btn{width:100%;height:52px;margin-top:1px;padding:0 16px;border:0;border-radius:18px;background:var(--mfy-brand);color:#fff;font-size:13px;font-weight:800;text-transform:uppercase;box-shadow:0 13px 28px rgba(17,19,24,.2);display:flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap}
+.mfy-hero-form .mfy-main-btn:hover{background:var(--mfy-brand-hover);box-shadow:0 16px 32px rgba(17,19,24,.24)}
+.mfy-hero-form .mfy-main-btn svg{width:17px;height:17px;flex:0 0 auto}
+.mfy-hero-form .mfy-security{padding-top:5px;display:flex;align-items:center;justify-content:center;gap:7px;row-gap:7px;flex-wrap:wrap;color:#65758f;font-size:10.5px;font-weight:750;line-height:1.25}
+.mfy-hero-form .mfy-security div{display:inline-flex;align-items:center;gap:5px}
+.mfy-hero-form .mfy-security svg{color:#596579;filter:none}
+.mfy-hero-form .mfy-security b{color:#c7d2df;font-weight:500}
+.mfy-hero-form .mfy-legal{max-width:340px;margin:4px auto 0;text-align:center;color:#94a3b8;font-size:10.5px;font-weight:650;line-height:1.42}
+.mfy-hero-form .mfy-status-msg{margin:0;padding:10px;border-radius:13px;font-size:11px}
+#mentorify-trial-section.mfy-trial-relocated{width:0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;overflow:hidden!important}
+@media(max-width:1024px){
+  .mfy-hero{min-height:940px;padding-right:22px;padding-left:22px}
+  .mfy-hero-layout{padding-top:132px;grid-template-columns:minmax(0,1fr) minmax(340px,390px);gap:34px}
+  .mfy-hero h1{font-size:52px}
+  .mfy-hero-logo{width:150px;margin-bottom:28px}
+  .mfy-hero-form .mfy-login-card{max-width:390px}
+}
+@media(max-width:820px){
+  .mfy-hero{min-height:0;padding:0 20px 82px}
+  .mfy-hero-layout{width:min(620px,100%);padding-top:112px;grid-template-columns:1fr;align-items:start;gap:42px;transform:none}
+  .mfy-hero-content{max-width:590px;text-align:left}
+  .mfy-hero-form{justify-content:center}
+  .mfy-hero-form .mfy-login-card{max-width:430px}
+}
+@media(max-width:767px){
+  .mfy-hero{min-height:0;padding-right:14px;padding-left:14px;padding-bottom:72px}
+  .mfy-hero-video{width:118%;height:118%;inset:-9%;object-position:38% center;transform:scale(1.06);transform-origin:38% 42%;filter:saturate(1.5) contrast(1.1) brightness(.78)}
+  .mfy-hero-layout{padding-top:104px;gap:32px}
+  .mfy-hero-content{width:100%;max-width:570px;margin:0 auto;text-align:center}
+  .mfy-hero-logo{width:132px;margin:0 auto 24px;object-position:center}
+  .mfy-hero h1{margin-bottom:17px;font-size:clamp(38px,11.5vw,49px);line-height:1.02}
+  .mfy-hero-subtitle{margin:0;font-size:17px}
+  .mfy-hero-areas{margin-top:6px;text-align:center;font-size:17px;line-height:1.4;letter-spacing:0}
+  .mfy-hero-actions{justify-content:center;margin-top:22px;gap:9px}
+  .mfy-hero-button{min-height:49px;padding:0 22px;font-size:13px}
+  .mfy-hero-micro{margin:15px auto 0;font-size:13px;line-height:1.5}
+  .mfy-hero-form .mfy-login-card{max-width:406px;border-radius:28px}
+  .mfy-hero-form .mfy-card-header{padding:29px 20px 20px}
+  .mfy-hero-form .mfy-title-block h2{font-size:clamp(23px,7vw,28px)}
+  .mfy-hero-form .mfy-card-body{padding:2px 26px 27px}
+}
+@media(max-width:390px){.mfy-hero{min-height:0;padding-bottom:66px}.mfy-hero-layout{padding-top:98px}.mfy-hero-content{max-width:370px}.mfy-hero h1{font-size:38px}}
+@media(prefers-reduced-motion:reduce){.mfy-hero-link{transition:none}}

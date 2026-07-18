@@ -1,0 +1,40 @@
+.mfy-site-header{
+  --header-ink:#fff;
+  position:fixed;
+  z-index:1000;
+  top:12px;
+  left:12px;
+  right:12px;
+  height:88px;
+  display:grid;
+  grid-template-columns:minmax(120px,1fr) auto minmax(470px,1fr);
+  align-items:center;
+  padding:0 24px;
+  color:var(--header-ink);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:5px;
+  background:rgba(5,5,5,.12);
+  box-shadow:inset 0 -1px rgba(255,255,255,.06);
+  -webkit-backdrop-filter:blur(5px);
+  backdrop-filter:blur(5px);
+  transition:height .42s cubic-bezier(.22,1,.36,1),top .42s cubic-bezier(.22,1,.36,1),background-color .42s ease,color .42s ease,border-color .42s ease,backdrop-filter .42s ease;
+}
+.mfy-header-left,.mfy-header-right{display:flex;align-items:center}.mfy-header-left{justify-self:start;gap:16px}.mfy-header-right{justify-self:end;gap:18px}.mfy-header-icon{position:relative;width:24px;height:24px;display:grid;place-items:center;padding:0;border:0;background:transparent;color:inherit;cursor:pointer}.mfy-header-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s ease}.mfy-menu-toggle:hover svg,.mfy-cart-button:hover svg{transform:scale(1.06)}
+.mfy-header-brand{position:relative;justify-self:center;min-width:290px;height:62px;display:grid;place-items:center;color:inherit;text-align:center;text-decoration:none}.mfy-brand-initial,.mfy-brand-scrolled{position:absolute;display:flex;flex-direction:column;align-items:center;transition:opacity .38s ease,transform .42s cubic-bezier(.22,1,.36,1)}.mfy-brand-initial strong{font-family:Georgia,'Times New Roman',serif;font-size:25px;line-height:1;font-weight:400;letter-spacing:.08em;white-space:nowrap}.mfy-brand-initial small{margin-top:10px;font-size:9px;font-weight:600;letter-spacing:.48em;white-space:nowrap}.mfy-brand-scrolled{opacity:0;transform:translateY(8px);font-size:11px;font-weight:700;letter-spacing:.44em;white-space:nowrap}
+.mfy-header-links{display:flex;align-items:center;gap:29px}.mfy-header-links a{position:relative;color:inherit;text-decoration:none;font-size:11px;font-weight:600;white-space:nowrap}.mfy-header-links a:not(.mfy-header-cta)::after{content:"";position:absolute;right:0;bottom:-6px;left:0;height:1px;background:currentColor;transform:scaleX(0);transition:transform .3s ease}.mfy-header-links a:hover::after{transform:scaleX(1)}.mfy-header-cta{padding:10px 17px;border:1px solid currentColor;border-radius:999px;transition:background-color .35s ease,color .35s ease,border-color .35s ease,transform .25s ease}.mfy-header-cta:hover{transform:translateY(-1px)}
+.mfy-cart-button{margin-left:1px}.mfy-cart-button svg{width:23px;height:23px}.mfy-cart-badge{position:absolute;top:-6px;right:-7px;width:13px;height:13px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#050505;font-size:8px;font-weight:800;transition:background-color .4s ease,color .4s ease}
+.mfy-mobile-menu{position:absolute;top:calc(100% + 8px);left:0;width:min(340px,calc(100vw - 24px));padding:15px;display:grid;gap:3px;visibility:hidden;opacity:0;transform:translateY(-10px);border:1px solid rgba(255,255,255,.16);border-radius:10px;background:rgba(7,7,7,.9);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);transition:opacity .3s ease,transform .3s ease,visibility .3s ease}.mfy-mobile-menu a{padding:13px 14px;border-radius:7px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;transition:background-color .2s ease}.mfy-mobile-menu a:hover{background:rgba(255,255,255,.1)}.mfy-mobile-cta{margin-top:5px;border:1px solid rgba(255,255,255,.35);text-align:center}.mfy-site-header.menu-open .mfy-mobile-menu{visibility:visible;opacity:1;transform:none}
+.mfy-site-header.is-scrolled{--header-ink:#080808;top:0;height:64px;border-color:rgba(15,23,42,.11);border-right-color:transparent;border-left-color:transparent;border-radius:0;background:rgba(255,255,255,.96);box-shadow:inset 0 -1px rgba(15,23,42,.08);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}.mfy-site-header.is-scrolled .mfy-brand-initial{opacity:0;transform:translateY(-8px)}.mfy-site-header.is-scrolled .mfy-brand-scrolled{opacity:1;transform:none}.mfy-site-header.is-scrolled .mfy-header-cta{border-color:#050505;background:#050505;color:#fff}.mfy-site-header.is-scrolled .mfy-cart-badge{background:#050505;color:#fff}.mfy-site-header.is-scrolled .mfy-mobile-menu{border-color:rgba(15,23,42,.1);background:rgba(255,255,255,.98);box-shadow:0 18px 45px rgba(15,23,42,.12)}.mfy-site-header.is-scrolled .mfy-mobile-menu a{color:#080808}.mfy-site-header.is-scrolled .mfy-mobile-menu a:hover{background:#f2f4f7}.mfy-site-header.is-scrolled .mfy-mobile-cta{border-color:#080808;background:#080808;color:#fff}
+@media(max-width:1080px){.mfy-site-header{grid-template-columns:110px auto 1fr;padding:0 18px}.mfy-header-links{gap:18px}.mfy-header-brand{min-width:245px}.mfy-brand-initial strong{font-size:21px}}
+@media(max-width:820px){.mfy-site-header{top:8px;left:8px;right:8px;height:72px;grid-template-columns:1fr auto 1fr;padding:0 15px}.mfy-header-links{display:none}.mfy-header-right{gap:0}.mfy-header-brand{min-width:0;width:210px;height:56px}.mfy-brand-initial strong{font-size:18px;letter-spacing:.06em}.mfy-brand-initial small{margin-top:7px;font-size:7px;letter-spacing:.42em}.mfy-brand-scrolled{font-size:13px;letter-spacing:.25em}.mfy-header-left{gap:14px}.mfy-site-header.is-scrolled{top:0;left:0;right:0;height:62px}.mfy-mobile-menu{left:-7px}}
+@media(max-width:420px){.mfy-site-header{padding:0 13px}.mfy-header-left{gap:12px}.mfy-header-icon{width:21px}.mfy-header-icon svg{width:19px;height:19px}.mfy-header-brand{width:164px}.mfy-brand-initial strong{font-size:15px}.mfy-brand-initial small{font-size:6px}.mfy-brand-scrolled{font-size:12px;letter-spacing:.22em}.mfy-cart-badge{right:-5px}.mfy-mobile-menu{width:calc(100vw - 16px)}}
+@media(prefers-reduced-motion:reduce){.mfy-site-header,.mfy-site-header *{transition-duration:.01ms!important}}
+
+/* Marca central más visible en celular sin alterar los iconos laterales. */
+@media(max-width:820px){.mfy-header-brand{width:230px}.mfy-brand-initial strong{font-size:21px;letter-spacing:.055em}.mfy-brand-initial small{margin-top:8px;font-size:7px;letter-spacing:.44em}}
+@media(max-width:420px){.mfy-header-brand{width:188px}.mfy-brand-initial strong{font-size:18px;letter-spacing:.04em}.mfy-brand-initial small{font-size:6.5px;letter-spacing:.4em}}
+
+/* Nombre de marca visible en el estado blanco del header. */
+.mfy-brand-scrolled{font-size:16px;font-weight:750;letter-spacing:.32em}
+@media(max-width:820px){.mfy-brand-scrolled{font-size:17px;letter-spacing:.27em}}
+@media(max-width:420px){.mfy-brand-scrolled{font-size:15px;letter-spacing:.24em}}

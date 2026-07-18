@@ -1,0 +1,104 @@
+#mentorifyPremiumPaymentBlock{font-family:Inter,Arial,sans-serif!important}#mentorifyPremiumPaymentBlock h1,#mentorifyPremiumPaymentBlock h2{font-family:Inter,Arial,sans-serif!important}#mentorifyOfferCard{border-radius:28px!important;box-shadow:0 30px 80px rgba(0,0,0,.25)!important}#mentorifyOfferCard .moc-discount,#mentorifyOfferCard .moc-save{letter-spacing:.05em!important;border-radius:999px!important}
+
+/* Composición exterior premium. La tarjeta y su lógica interna se conservan. */
+#mentorifyPremiumPaymentBlock{position:relative!important;isolation:isolate!important;min-height:720px!important;padding:76px 24px!important;overflow:hidden!important;background:#0b1857!important;color:#fff!important}
+#mentorifyPremiumPaymentBlock::before{content:"";position:absolute;z-index:-2;inset:-7%;background:url("https://secretosdemillonarios.com/wp-content/uploads/2026/04/fondo.jpg") center/cover no-repeat;animation:mfyOfferBreathe 18s ease-in-out infinite alternate;will-change:transform}
+#mentorifyPremiumPaymentBlock::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(5,18,73,.3),rgba(5,18,73,.08) 55%,rgba(5,18,73,.18));pointer-events:none}
+#mentorifyPremiumPaymentBlock .mpp-wrap{width:100%!important;max-width:1180px!important;margin:0 auto!important;display:grid!important;grid-template-columns:minmax(0,1fr) 285px!important;gap:72px!important;align-items:center!important}
+#mentorifyPremiumPaymentBlock .mpp-left{text-align:left!important}
+#mentorifyPremiumPaymentBlock .mf-pack-wrap-v2{max-width:720px!important;margin:0!important}
+#mentorifyPremiumPaymentBlock .mf-pack-kicker-v2{margin:0 0 14px!important;color:#ffd84a!important;font-size:14px!important;font-weight:850!important;letter-spacing:.08em!important}
+#mentorifyPremiumPaymentBlock .mf-pack-title-v2{max-width:700px!important;margin:0 0 20px!important;color:#fff!important;font-family:"Inter Tight",Inter,Arial,sans-serif!important;font-size:clamp(43px,5vw,62px)!important;font-weight:900!important;line-height:.98!important;letter-spacing:-.055em!important}
+#mentorifyPremiumPaymentBlock .mf-pack-desc-v2{max-width:680px!important;margin:0 0 24px!important;color:rgba(255,255,255,.9)!important;font-size:18px!important;font-weight:520!important;line-height:1.48!important}
+#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2{max-width:620px;margin:0 0 28px;padding:0;display:grid;gap:12px;list-style:none;color:#fff;font-size:16px;font-weight:650}
+#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2 li{position:relative;padding-left:30px}
+#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2 li::before{content:"✓";position:absolute;left:0;top:-1px;width:21px;height:21px;display:grid;place-items:center;border:1px solid rgba(255,216,74,.55);border-radius:50%;color:#ffd84a;font-size:12px}
+#mentorifyPremiumPaymentBlock .mf-discount-box-v2{width:min(100%,360px)!important;margin:0 0 20px!important;text-align:center!important}
+#mentorifyPremiumPaymentBlock .mf-pack-final-v2{margin:0!important;color:#fff!important;font-size:18px!important;font-weight:800!important;text-align:left!important}
+@keyframes mfyOfferBreathe{0%{transform:scale(1.02) translate3d(-.5%,0,0)}50%{transform:scale(1.065) translate3d(.8%,-.5%,0)}100%{transform:scale(1.035) translate3d(-.2%,.6%,0)}}
+@media(max-width:900px){#mentorifyPremiumPaymentBlock{padding:64px 22px!important}#mentorifyPremiumPaymentBlock .mpp-wrap{grid-template-columns:minmax(0,1fr) 280px!important;gap:38px!important}#mentorifyPremiumPaymentBlock .mf-pack-title-v2{font-size:43px!important}}
+@media(max-width:767px){#mentorifyPremiumPaymentBlock{min-height:0!important;padding:58px 18px 64px!important}#mentorifyPremiumPaymentBlock .mpp-wrap{display:flex!important;flex-direction:column!important;gap:42px!important}#mentorifyPremiumPaymentBlock .mpp-left{text-align:center!important}#mentorifyPremiumPaymentBlock .mf-pack-wrap-v2{margin:auto!important}#mentorifyPremiumPaymentBlock .mf-pack-kicker-v2{font-size:12px!important}#mentorifyPremiumPaymentBlock .mf-pack-title-v2{max-width:360px!important;margin-left:auto!important;margin-right:auto!important;font-size:34px!important;line-height:1.02!important}#mentorifyPremiumPaymentBlock .mf-pack-desc-v2{max-width:350px!important;margin-left:auto!important;margin-right:auto!important;font-size:15.5px!important;line-height:1.45!important}#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2{width:max-content;max-width:100%;margin:0 auto 28px;text-align:left;font-size:14px}#mentorifyPremiumPaymentBlock .mf-discount-box-v2{width:min(88%,340px)!important;margin-left:auto!important;margin-right:auto!important}#mentorifyPremiumPaymentBlock .mf-pack-final-v2{text-align:center!important;font-size:16px!important}}
+@media(prefers-reduced-motion:reduce){#mentorifyPremiumPaymentBlock::before{animation:none}}
+
+/* Jerarquía editorial coherente con el resto de secciones. */
+#mentorifyPremiumPaymentBlock .mf-pack-kicker-v2{font-size:12px!important;font-weight:800!important;letter-spacing:.14em!important}
+#mentorifyPremiumPaymentBlock .mf-pack-title-v2{max-width:720px!important;font-size:clamp(38px,4.5vw,56px)!important;font-weight:750!important;line-height:1.03!important;letter-spacing:-.045em!important}
+#mentorifyPremiumPaymentBlock .mf-pack-desc-v2{font-size:18px!important;font-weight:450!important;line-height:1.55!important}
+#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2{font-size:16px!important;font-weight:500!important;line-height:1.45!important}
+#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2 li::before{font-weight:700!important}
+#mentorifyPremiumPaymentBlock .mf-discount-box-v2{display:block!important;appearance:none!important;-webkit-appearance:none!important;border:1px solid rgba(255,255,255,.28)!important;cursor:pointer!important;font-family:Inter,Arial,sans-serif!important;box-shadow:0 0 18px rgba(255,212,0,.52),0 0 42px rgba(255,138,0,.24)!important;animation:mfyDiscountCtaPulse 2.4s cubic-bezier(.4,0,.2,1) infinite!important;transition:transform .25s ease,filter .25s ease,box-shadow .25s ease!important}
+#mentorifyPremiumPaymentBlock .mf-discount-box-v2:hover{transform:translateY(-2px) scale(1.018)!important;filter:brightness(1.06)!important;box-shadow:0 0 24px rgba(255,212,0,.68),0 0 54px rgba(255,138,0,.34)!important}
+#mentorifyPremiumPaymentBlock .mf-discount-box-v2:focus-visible{outline:3px solid #fff!important;outline-offset:5px!important}
+#mentorifyPremiumPaymentBlock .mf-discount-number-v2{font-weight:850!important}
+#mentorifyPremiumPaymentBlock .mf-discount-text-v2{font-weight:750!important;letter-spacing:.07em!important}
+#mentorifyPremiumPaymentBlock .mf-pack-final-v2{font-size:17px!important;font-weight:600!important;letter-spacing:-.01em!important}
+@keyframes mfyDiscountCtaPulse{0%,100%{transform:scale(1);filter:brightness(1)}50%{transform:scale(1.025);filter:brightness(1.07)}}
+@media(max-width:767px){#mentorifyPremiumPaymentBlock .mf-pack-title-v2{font-size:32px!important;font-weight:750!important}#mentorifyPremiumPaymentBlock .mf-pack-desc-v2{font-size:15px!important;font-weight:450!important}#mentorifyPremiumPaymentBlock .mf-pack-benefits-v2{font-size:14px!important;font-weight:500!important}#mentorifyPremiumPaymentBlock .mf-pack-final-v2{font-size:15.5px!important;font-weight:600!important}}
+@media(prefers-reduced-motion:reduce){#mentorifyPremiumPaymentBlock .mf-discount-box-v2{animation:none!important}}
+
+/* CTA de descuento visible: prevalece sobre cualquier reset global de button. */
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2{
+  width:min(100%,405px)!important;
+  min-height:116px!important;
+  margin:4px auto 24px!important;
+  padding:18px 28px 17px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border:1px solid rgba(255,240,143,.8)!important;
+  border-radius:24px!important;
+  background:linear-gradient(115deg,#ffd900 0%,#ffc000 52%,#ff9200 100%)!important;
+  color:#08090c!important;
+  box-shadow:0 0 13px rgba(255,222,0,.9),0 0 30px rgba(255,190,0,.58),0 14px 34px rgba(0,0,0,.22)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  position:relative!important;
+  isolation:isolate!important;
+}
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2::after{content:"";position:absolute;z-index:-1;inset:-9px;border-radius:30px;background:linear-gradient(115deg,#ffdf00,#ff9c00);filter:blur(17px);opacity:.42;animation:mfyDiscountGlow 2.4s ease-in-out infinite;pointer-events:none}
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2 .mf-discount-number-v2{color:#08090c!important;font-size:52px!important;line-height:.84!important;font-weight:900!important;letter-spacing:-.055em!important}
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2 .mf-discount-text-v2{margin-top:12px!important;color:#08090c!important;font-size:19px!important;line-height:1!important;font-weight:850!important;letter-spacing:.045em!important}
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2:hover{background:linear-gradient(115deg,#ffe224 0%,#ffc928 52%,#ffa11c 100%)!important}
+@keyframes mfyDiscountCtaPulse{0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 0 13px rgba(255,222,0,.78),0 0 28px rgba(255,190,0,.5),0 14px 34px rgba(0,0,0,.2)}50%{transform:scale(1.03);filter:brightness(1.08);box-shadow:0 0 20px rgba(255,226,28,1),0 0 46px rgba(255,166,0,.72),0 17px 40px rgba(0,0,0,.24)}}
+@keyframes mfyDiscountGlow{0%,100%{opacity:.3;transform:scale(.98)}50%{opacity:.7;transform:scale(1.045)}}
+@media(max-width:767px){#mentorifyPremiumPaymentBlock button.mf-discount-box-v2{width:min(94%,350px)!important;min-height:104px!important;border-radius:21px!important}#mentorifyPremiumPaymentBlock button.mf-discount-box-v2 .mf-discount-number-v2{font-size:46px!important}#mentorifyPremiumPaymentBlock button.mf-discount-box-v2 .mf-discount-text-v2{font-size:16px!important}}
+
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2{animation:mfyDiscountVisiblePulse 1.85s ease-in-out infinite!important}
+#mentorifyPremiumPaymentBlock button.mf-discount-box-v2::after{animation:mfyDiscountGlow 1.85s ease-in-out infinite!important}
+#mentorifyPremiumPaymentBlock .mf-pack-final-v2{width:min(100%,405px)!important;max-width:405px!important;margin:0 auto!important;text-align:center!important}
+@keyframes mfyDiscountVisiblePulse{0%,100%{transform:scale(1);filter:brightness(1)}50%{transform:scale(1.035);filter:brightness(1.1)}}
+@media(max-width:767px){#mentorifyPremiumPaymentBlock .mf-pack-final-v2{width:min(94%,350px)!important;max-width:350px!important}}
+@media(prefers-reduced-motion:reduce){#mentorifyPremiumPaymentBlock button.mf-discount-box-v2,#mentorifyPremiumPaymentBlock button.mf-discount-box-v2::after{animation:none!important}}
+
+/* Movimiento ambiental hipnótico, lento y ligero. */
+#mentorifyPremiumPaymentBlock::before{inset:-10%!important;animation:mfyOfferHypnotic 16s cubic-bezier(.45,.05,.55,.95) infinite alternate!important;transform-origin:center center!important}
+#mentorifyPremiumPaymentBlock::after{background:radial-gradient(circle at 82% 18%,rgba(25,221,218,.16),transparent 24%),radial-gradient(circle at 78% 78%,rgba(188,27,180,.18),transparent 30%),linear-gradient(90deg,rgba(5,18,73,.3),rgba(5,18,73,.06) 55%,rgba(5,18,73,.16))!important;background-size:125% 125%,130% 130%,100% 100%!important;animation:mfyOfferLightDrift 19s ease-in-out infinite alternate!important}
+@keyframes mfyOfferHypnotic{0%{transform:scale(1.015) translate3d(-1.2%,-.4%,0) rotate(-.15deg)}50%{transform:scale(1.07) translate3d(.8%,-1%,0) rotate(.18deg)}100%{transform:scale(1.035) translate3d(1.1%,.8%,0) rotate(-.08deg)}}
+@keyframes mfyOfferLightDrift{0%{background-position:92% 5%,76% 90%,0 0;filter:saturate(1)}50%{background-position:72% 22%,92% 70%,0 0;filter:saturate(1.12)}100%{background-position:84% 34%,68% 82%,0 0;filter:saturate(1.04)}}
+@media(prefers-reduced-motion:reduce){#mentorifyPremiumPaymentBlock::before,#mentorifyPremiumPaymentBlock::after{animation:none!important}}
+
+/* Tarjeta de compra ligeramente mayor, conservando sus proporciones. */
+#mentorifyPremiumPaymentBlock .mpp-wrap{grid-template-columns:minmax(0,1fr) 320px!important}
+#mentorifyPremiumPaymentBlock #mentorifyOfferCard .moc-card{width:min(100%,320px)!important}
+@media(max-width:900px) and (min-width:768px){#mentorifyPremiumPaymentBlock .mpp-wrap{grid-template-columns:minmax(0,1fr) 305px!important}#mentorifyPremiumPaymentBlock #mentorifyOfferCard .moc-card{width:min(100%,305px)!important}}
+@media(max-width:767px){#mentorifyPremiumPaymentBlock #mentorifyOfferCard{width:100%!important}#mentorifyPremiumPaymentBlock #mentorifyOfferCard .moc-card{width:min(100%,310px)!important}}
+
+/* Movimiento continuo y visible, basado solo en transform para mantener fluidez. */
+#mentorifyPremiumPaymentBlock::before{inset:-14%!important;animation:mfyOfferConstantMotion 12s linear infinite!important;will-change:transform!important}
+#mentorifyPremiumPaymentBlock::after{animation:mfyOfferColorOrbit 14s linear infinite!important;will-change:background-position!important;filter:none!important}
+@keyframes mfyOfferConstantMotion{
+  0%{transform:translate3d(-2.2%,-1.2%,0) scale(1.04)}
+  25%{transform:translate3d(2%,-2%,0) scale(1.085)}
+  50%{transform:translate3d(2.3%,1.6%,0) scale(1.055)}
+  75%{transform:translate3d(-1.8%,2%,0) scale(1.09)}
+  100%{transform:translate3d(-2.2%,-1.2%,0) scale(1.04)}
+}
+@keyframes mfyOfferColorOrbit{
+  0%{background-position:100% 0,72% 100%,0 0}
+  25%{background-position:72% 18%,100% 76%,0 0}
+  50%{background-position:62% 44%,78% 58%,0 0}
+  75%{background-position:86% 26%,58% 82%,0 0}
+  100%{background-position:100% 0,72% 100%,0 0}
+}
+@media(prefers-reduced-motion:reduce){#mentorifyPremiumPaymentBlock::before,#mentorifyPremiumPaymentBlock::after{animation:none!important}}

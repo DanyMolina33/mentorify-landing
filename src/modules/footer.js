@@ -1,0 +1,13 @@
+const SOCIAL_URL = 'https://secretosdemillonarios.com/mentalidad';
+const WHATSAPP_URL = 'https://wa.me/51945986263';
+const PRIVACY_URL = 'https://secretosdemillonarios.com/politicas-de-privacidad';
+const waIcon = `<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.1 3C9 3 3.2 8.8 3.2 15.9c0 2.3.6 4.5 1.7 6.4L3 29l6.9-1.8a12.8 12.8 0 0 0 6.2 1.6c7.1 0 12.9-5.8 12.9-12.9S23.2 3 16.1 3Zm0 23.6c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.6 10.6 0 1 1 9.1 5Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.6-3.9-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6 0 1.6 1.1 3 1.3 3.2.2.2 2.2 3.4 5.4 4.8 2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5 0-.2-.3-.3-.6-.4Z"/></svg>`;
+
+export function initFooter() {
+  const community = document.querySelector('#comunidad-whatsapp');
+  if (!community || document.querySelector('.mf-footer-premium')) return;
+  const footer = document.createElement('footer');
+  footer.className = 'mf-footer-premium';
+  footer.innerHTML = `<div class="mf-footer-main"><div class="mf-footer-contact"><p class="mf-footer-eyebrow">CONTACTO MENTORIFY</p><h2>¿Quieres más información?</h2><p class="mf-footer-intro">Estamos para ayudarte. Contáctanos y resolveremos tus dudas sobre la plataforma, accesos o contenidos.</p><a class="mf-footer-whatsapp" href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">${waIcon}<span>Contactarnos por WhatsApp</span></a><p class="mf-footer-trust">Atención para consultas sobre acceso, biblioteca, contenidos y soporte general.</p></div><div class="mf-footer-links"><p>Enlaces</p><nav aria-label="Enlaces legales"><a href="#">Términos</a><a href="${PRIVACY_URL}" target="_blank" rel="noopener noreferrer">Privacidad</a></nav><div class="mf-footer-socials"><a href="${SOCIAL_URL}" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 24V13.5H17l.5-4h-4V7c0-1.2.3-2 2-2H18V1.4c-.4-.1-1.7-.2-3.1-.2-3 0-5.1 1.8-5.1 5.3v3H6.5v4h3.3V24h3.7z"/></svg></a><a href="${SOCIAL_URL}" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></svg></a><a href="${SOCIAL_URL}" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r=".9"/></svg></a></div></div></div><div class="mf-footer-bottom"><span>© 2026 Mentorify EIRL</span><div><a href="#">Términos</a><a href="${PRIVACY_URL}" target="_blank" rel="noopener noreferrer">Privacidad</a></div></div>`;
+  community.after(footer);
+}

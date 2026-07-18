@@ -1,0 +1,16 @@
+export const HERO_VIDEO_URL = 'https://secretosdemillonarios.com/wp-content/uploads/2026/07/background-video-jan-28.mp4';
+export const MAIN_LOGO_URL = 'https://secretosdemillonarios.com/wp-content/uploads/2026/06/lkogo-.png';
+export const FORM_LOGO_URL = 'https://secretosdemillonarios.com/wp-content/uploads/2026/05/Logo-e1770201950605.png';
+export const WHATSAPP_NUMBER = '51947064723';
+export const TRIAL_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbz_p04e41LiJwzYIomHgCjiZNoelQVDH5VrlSvKQxAbjVedL_zIPXuH5w7riEc0G1hn/exec';
+export const HOTMART_URL = 'https://pay.hotmart.com/B100727388A?checkoutMode=10';
+export const META_PIXEL_PRIMARY = '2670158496696527';
+export const META_PIXEL_LEGACY = '952423081054108';
+export const APP_ANDROID_IMAGE = 'https://secretosdemillonarios.com/wp-content/uploads/2026/06/APK.png';
+export const APP_IOS_IMAGE = 'https://secretosdemillonarios.com/wp-content/uploads/2026/06/IOS.png';
+export const PHONE_IMAGE = 'https://secretosdemillonarios.com/wp-content/uploads/2026/07/cel11.png';
+export const APP_ANDROID_URL = '';
+export const APP_IOS_URL = '';
+export const APP_WEB_URL = '';
+export const COMMUNITY_URL = '';
+export const TRIAL_DURATION = '48 horas';

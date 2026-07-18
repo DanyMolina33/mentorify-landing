@@ -4,7 +4,6 @@ export function initTrialFormPresentation() {
   const section = document.querySelector('#mentorify-trial-section');
   const card = section?.querySelector('.mfy-login-card');
   if (!section || !card) return;
-  section.querySelector('.mfy-trial-copy')?.remove();
   const formLogo = card.querySelector('.mfy-logo');
   if (formLogo) formLogo.src = FORM_LOGO_URL;
   card.querySelector('.mfy-title-block h2')?.replaceChildren(document.createTextNode('Entrenamiento aplicado'));

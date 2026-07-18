@@ -1,13 +1,9 @@
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/hero.css';
 import './styles/form.css';
 import './styles/sections.css';
 import './styles/offer.css';
 import './styles/faq.css';
 import './styles/modal.css';
 import './styles/responsive.css';
-import './styles/header.css';
 import { initMarquee } from './modules/marquee.js';
 import { initAccordions } from './modules/accordions.js';
 import { initOffer } from './modules/offer.js';
@@ -23,8 +19,10 @@ import { initWhatsappCommunity } from './modules/whatsapp-community.js';
 import './styles/whatsapp-community.css';
 import { initFooter } from './modules/footer.js';
 import './styles/footer.css';
+import { initHeroVideo } from './modules/hero-video.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  initHeroVideo();
   initHeader();
   removeLegacyBlocks();
   initTrialFormPresentation();

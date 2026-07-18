@@ -12,3 +12,11 @@
 .mf-footer-socials a{border-color:#292b30!important;background:#111216!important;color:#d7d9de!important}
 .mf-footer-socials a:hover{border-color:#555962!important;background:#181a1f!important;color:#fff!important}
 .mf-footer-bottom{border-top-color:#24262b!important;color:#898d95!important}
+
+/* Cierre editorial: contacto secundario y discreto. */
+.mf-footer-whatsapp{min-height:40px!important;padding:0 15px!important;gap:8px!important;border:1px solid #34363c!important;border-radius:999px!important;background:#111216!important;color:#f5f5f7!important;font-size:12px!important;font-weight:650!important;box-shadow:none!important}
+.mf-footer-whatsapp svg{width:16px!important;height:16px!important;color:#24c781!important}
+.mf-footer-whatsapp:hover{transform:translateY(-1px)!important;border-color:#555962!important;background:#181a1f!important;box-shadow:none!important}
+.mf-footer-whatsapp:focus-visible{outline:2px solid #fff!important;outline-offset:3px!important}
+.mf-footer-trust{margin-top:12px!important;font-size:11px!important}
+@media(max-width:767px){.mf-footer-main{padding-top:58px!important}.mf-footer-intro{max-width:430px;margin-left:auto!important;margin-right:auto!important}.mf-footer-whatsapp{width:max-content!important;max-width:none!important;margin:0 auto!important}.mf-footer-trust{margin-top:12px!important}.mf-footer-links{padding-top:44px!important}}
